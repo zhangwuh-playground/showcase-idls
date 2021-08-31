@@ -13,5 +13,5 @@ struct RcpResponse {
 }
 
 service UserService {
-   string getUser(1:i32 id)
+   RcpResponse getUser(1:i32 id)
 }
