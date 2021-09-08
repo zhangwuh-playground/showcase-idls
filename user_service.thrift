@@ -13,5 +13,9 @@ struct RcpResponse {
 }
 
 service UserService {
-   RcpResponse getUser(1:i32 id)
+   RcpResponse getUser(1:TraceContext tc, 2:i32 id)
+}
+
+struct TraceContext {
+  1: required i32 traceId
 }
