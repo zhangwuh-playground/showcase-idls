@@ -17,5 +17,5 @@ service UserService {
 }
 
 struct TraceContext {
-  1: required String carrier
+  1: required string carrier
 }
